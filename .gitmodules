@@ -1,0 +1,3 @@
+[submodule "fun-dns"]
+	path = fun-dns
+	url = https://github.com/badlee/fun-dns
