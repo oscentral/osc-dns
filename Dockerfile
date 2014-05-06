@@ -3,7 +3,8 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install git curl
 ADD http://localhost:55000/frank-git /root/.ssh/frank-git
 ADD http://localhost:55000/config /root/.ssh/config
-RUN /bin/sh
+RUN echo > /.nvm/manpath
+RUN chmod +x /.nvm/manpath
 RUN git clone http://github.com/oscentral/osc-dns /osc-dns
 #RUN source ~/.profile
 RUN exec /bin/bash /.nvm/nvm.sh
