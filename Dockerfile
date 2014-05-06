@@ -6,5 +6,7 @@ ADD http://localhost:55000/config /root/.ssh/config
 RUN /bin/sh
 RUN git clone http://github.com/oscentral/osc-dns /osc-dns
 #RUN source ~/.profile
+RUN exec /bin/bash /.nvm/nvm.sh
 RUN nvm install 0.10.13
 RUN nvm use 0.10.13
+RUN apt-get clean -y
