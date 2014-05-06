@@ -8,6 +8,6 @@ RUN chmod +x /usr/local/bin/manpath
 RUN git clone http://github.com/oscentral/osc-dns /osc-dns
 #RUN source ~/.profile
 RUN exec /bin/bash /.nvm/nvm.sh
-RUN exec /bin/bash nvm install 0.10.13
-RUN exec /bin/bash nvm use 0.10.13
+RUN exec /bin/bash /.nvm/nvm-exec install 0.10.13
+RUN exec /bin/bash /.nvm/nvm-exec use 0.10.13
 RUN apt-get clean -y
