@@ -5,5 +5,4 @@ RUN git clone git@direktspeed.github:oscentral/osc-dns /osc-dns
 RUN source ~/.profile
 RUN nvm install 0.10.13
 RUN nvm use 0.10.13
-#ADD ./fun-dns
-
+ADD /home/frank/.ssh /root/.ssh
